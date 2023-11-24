@@ -1,0 +1,57 @@
+.services {
+	padding: px-to-rem(90) 0;
+	&__title {
+		color: var(--text_color);
+		margin-bottom: px-to-rem(60);
+	}
+	&__list {
+		@extend .flex-aic-jcsb;
+		gap: px-to-rem(40);
+		li {
+			display: grid;
+			grid-template-columns: 1fr;
+			align-content: end;
+			gap: px-to-rem(30);
+			max-width: px-to-rem(260);
+			width: 100%;
+			height: px-to-rem(360);
+			background-color: #fafafa;
+			padding: px-to-rem(30);
+			border-radius: px-to-rem(20);
+			position: relative;
+			&::after{
+				content: 'от 0р';
+				@extend .flex-aic-jcc;
+				width: px-to-rem(110);
+				height: px-to-rem(30);
+				color: var(--light_color);
+				font-family: Montserrat__k;
+				font-size: px-to-rem(14);
+				font-weight: 700;
+				line-height: 1.1;
+				background-color: var(--accent_color);
+				position: absolute;
+				top: 0;
+				right: 0;
+				border-radius: px-to-rem(5) px-to-rem(20) px-to-rem(5) px-to-rem(5);
+			}
+		}
+		.img__wrap{
+			flex-basis: 50%;
+			@extend .flex-aic-jcc;
+			width: px-to-rem(200);
+			height: px-to-rem(150);
+		}
+		img {
+			margin: 0 auto;
+			object-fit: contain;
+		}
+		h3 {
+			color: var(--text_color);
+			font-family: Montserrat__k;
+			font-size: px-to-rem(24);
+			font-weight: 700;
+			line-height: 1.2;
+		}
+	}
+}

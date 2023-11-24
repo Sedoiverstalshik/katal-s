@@ -1,0 +1,121 @@
+.header{
+	padding: px-to-rem(28) 0;
+	&__wrap{
+		display: grid;
+		grid-template-columns: px-to-rem(200) px-to-rem(150) 1fr 1fr 1fr;
+		align-items: center;
+		gap: px-to-rem(10);
+		position: relative;
+		margin-bottom: px-to-rem(28);
+	}
+	&__logo{
+		margin-left: px-to-rem(-20);
+	}
+	.label__yandex{
+		position: relative;
+		top: px-to-rem(-10);
+		.label{
+			position: absolute;
+			left: 50%;
+			bottom: px-to-rem(-5);
+			transform: translateX(-50%);
+			&::before{
+				content: '';
+				display: block;
+				background-image: url('/image/label.png');
+				width: px-to-rem(56);
+				height: px-to-rem(87);
+				position: absolute;
+				top: px-to-rem(-45);
+				left: 50%;
+				transform: translateX(-50%);
+				z-index: -1;
+			}
+			&::after{
+				content: '';
+				display: block;
+				background-image: url('/image/label_yandex.png');
+				width: px-to-rem(26);
+				height: px-to-rem(36);
+				position: absolute;
+				top: px-to-rem(-45);
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+	.location, &__social, &__phone{
+		color: #4D4D4D;
+		font-family: Montserrat__k;
+		font-size: px-to-rem(14);
+		font-style: normal;
+		font-weight: 500;
+		line-height: 1.5; 
+	}
+	.location{
+		@extend .flex-aic-jcc;
+		gap: px-to-rem(15);
+		svg{
+			align-self: center;
+			justify-self: center;
+			max-width: px-to-rem(50);
+			width: 100%;
+			height: px-to-rem(50);
+			fill: var(--accent_color);
+		}
+		span{
+			font-size: px-to-rem(16);
+			color: var(--accent_color);
+			border-bottom: 1px dashed var(--accent_color);
+		}
+	}
+	.social{
+		@extend .flex-aic-jcfe;
+		gap: px-to-rem(15);
+		svg{
+			align-self: center;
+			justify-self: center;
+			width: px-to-rem(50);
+			height: px-to-rem(50);
+			fill: var(--light_color);
+		}
+		div{
+			align-self: center;
+			justify-self: flex-end;
+		}
+		span{
+			display: block;
+			text-align: end;
+			font-size: px-to-rem(16);
+			font-weight: 700;
+			color: var(--text_color);
+		}
+	}
+	&__phone a{
+		display: flex;
+		flex-direction: column;
+		text-align: end;
+		span{
+			font-size: px-to-rem(24);
+			font-weight: 700;
+			color: var(--text_color);
+		}
+	}
+	&__menu-list{
+		@extend .flex-aic-jcsb;
+		position: relative;
+		z-index: 2;
+		background-color: var(--light_color);
+		border-radius: px-to-rem(25);
+		border: 2px solid #F0F0F0;
+		padding: px-to-rem(17) px-to-rem(60) px-to-rem(16);
+		margin:0 px-to-rem(-20);
+		a{
+			font-family: Montserrat__k;
+			font-size: px-to-rem(18);
+			font-weight: 600;
+			line-height: 1.5;
+			color: var(--second_color);
+		}
+	}
+}
