@@ -19,17 +19,6 @@
 		position: relative;
 		transform: translateY(-90px);
 	}
-	// &__button-prev, &__button-next{
-	// 	width: px-to-rem(30);
-	// 	height: px-to-rem(30);
-	// 	background-color: var(--accent_color);
-	// 	border-radius: 50%;
-	// 	&::after{
-	// 		font-size: px-to-rem(16);
-	// 		font-weight: 900;
-	// 		color: var(--light_color);
-	// 	}
-	// }
 	&__button-prev{
 		margin-left: px-to-rem(-55);
 	}

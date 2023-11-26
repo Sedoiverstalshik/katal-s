@@ -22,7 +22,7 @@
 			&::before{
 				content: '';
 				display: block;
-				background-image: url('/image/label.png');
+				background-image: url('./image/label.png');
 				width: px-to-rem(56);
 				height: px-to-rem(87);
 				position: absolute;
@@ -34,7 +34,7 @@
 			&::after{
 				content: '';
 				display: block;
-				background-image: url('/image/label_yandex.png');
+				background-image: url('./image/label_yandex.png');
 				width: px-to-rem(26);
 				height: px-to-rem(36);
 				position: absolute;
@@ -46,7 +46,7 @@
 	}
 	.location, &__social, &__phone{
 		color: #4D4D4D;
-		font-family: Montserrat__k;
+		font-family: montserrat__k;
 		font-size: px-to-rem(14);
 		font-style: normal;
 		font-weight: 500;
@@ -111,7 +111,7 @@
 		padding: px-to-rem(17) px-to-rem(60) px-to-rem(16);
 		margin:0 px-to-rem(-20);
 		a{
-			font-family: Montserrat__k;
+			font-family: montserrat__k;
 			font-size: px-to-rem(18);
 			font-weight: 600;
 			line-height: 1.5;

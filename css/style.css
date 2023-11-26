@@ -166,7 +166,7 @@ body :focus {
 
 .title {
   color: var(--light_color);
-  font-family: Montserrat__k, sans-serif;
+  font-family: montserrat__k, sans-serif;
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 700;
@@ -179,7 +179,7 @@ body :focus {
 .btn__accent {
   display: inline-block;
   color: var(--light_color);
-  font-family: Montserrat__k;
+  font-family: montserrat__k;
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 700;
@@ -198,7 +198,7 @@ body :focus {
   display: inline-block;
   width: 100%;
   color: var(--text_color);
-  font-family: Montserrat__k;
+  font-family: montserrat__k;
   font-size: 0.875rem;
   font-weight: 700;
   line-height: 1.5;
@@ -210,7 +210,7 @@ body :focus {
 
 .form__input {
   color: var(--input_color);
-  font-family: Montserrat__k;
+  font-family: montserrat__k;
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 500;
@@ -267,7 +267,7 @@ body :focus {
 .header .label__yandex .label::before {
   content: "";
   display: block;
-  background-image: url("/image/label.png");
+  background-image: url("./image/label.png");
   width: 3.5rem;
   height: 5.4375rem;
   position: absolute;
@@ -281,7 +281,7 @@ body :focus {
 .header .label__yandex .label::after {
   content: "";
   display: block;
-  background-image: url("/image/label_yandex.png");
+  background-image: url("./image/label_yandex.png");
   width: 1.625rem;
   height: 2.25rem;
   position: absolute;
@@ -293,7 +293,7 @@ body :focus {
 }
 .header .location, .header__social, .header__phone {
   color: #4D4D4D;
-  font-family: Montserrat__k;
+  font-family: montserrat__k;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -364,7 +364,7 @@ body :focus {
   margin: 0 -1.25rem;
 }
 .header__menu-list a {
-  font-family: Montserrat__k;
+  font-family: montserrat__k;
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.5;
@@ -389,7 +389,7 @@ body :focus {
 }
 .hero__description {
   color: var(--text_color);
-  font-family: Montserrat__k;
+  font-family: montserrat__k;
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.5;
@@ -430,7 +430,7 @@ body :focus {
 .hero__form .fieldset__privacy .input__checkbox:checked::after {
   content: "";
   display: block;
-  background-image: url("/image/checkmark.svg");
+  background-image: url("./image/checkmark.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 1.125rem;
@@ -445,7 +445,7 @@ body :focus {
       -ms-flex-align: center;
           align-items: center;
   color: #4D4D4D;
-  font-family: Montserrat__k;
+  font-family: montserrat__k;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
@@ -513,7 +513,7 @@ body :focus {
   width: 6.875rem;
   height: 1.875rem;
   color: var(--light_color);
-  font-family: Montserrat__k;
+  font-family: montserrat__k;
   font-size: 0.875rem;
   font-weight: 700;
   line-height: 1.1;
@@ -536,7 +536,7 @@ body :focus {
 }
 .services__list h3 {
   color: var(--text_color);
-  font-family: Montserrat__k;
+  font-family: montserrat__k;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.2;
@@ -611,7 +611,7 @@ body :focus {
 .gallery__list li {
   gap: 3.125rem;
   color: var(--light_color);
-  font-family: Montserrat__k;
+  font-family: montserrat__k;
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.5;
