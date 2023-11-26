@@ -293,7 +293,7 @@ body :focus {
 }
 .header .location, .header__social, .header__phone {
   color: #4D4D4D;
-  font-family: montserrat__k;
+  font-family: "montserrat__k";
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -364,7 +364,7 @@ body :focus {
   margin: 0 -1.25rem;
 }
 .header__menu-list a {
-  font-family: montserrat__k;
+  font-family: "montserrat__k";
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.5;
@@ -430,7 +430,7 @@ body :focus {
 .hero__form .fieldset__privacy .input__checkbox:checked::after {
   content: "";
   display: block;
-  background-image: url("./image/checkmark.svg");
+  background-image: url("../image/checkmark.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 1.125rem;

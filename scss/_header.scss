@@ -46,7 +46,7 @@
 	}
 	.location, &__social, &__phone{
 		color: #4D4D4D;
-		font-family: montserrat__k;
+		font-family: 'montserrat__k';
 		font-size: px-to-rem(14);
 		font-style: normal;
 		font-weight: 500;
@@ -111,7 +111,7 @@
 		padding: px-to-rem(17) px-to-rem(60) px-to-rem(16);
 		margin:0 px-to-rem(-20);
 		a{
-			font-family: montserrat__k;
+			font-family: 'montserrat__k';
 			font-size: px-to-rem(18);
 			font-weight: 600;
 			line-height: 1.5;

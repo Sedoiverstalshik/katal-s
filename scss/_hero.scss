@@ -51,7 +51,7 @@
 				&:checked::after{
 					content: "";
 					display: block;
-					background-image: url('./image/checkmark.svg');
+					background-image: url('../image/checkmark.svg');
 					background-repeat: no-repeat;
 					background-position: center;
 					width:  px-to-rem(18);
