@@ -1,43 +1,43 @@
 @charset "UTF-8";
 @font-face {
   font-family: "montserrat__k";
-  src: url("/fonts/montserrat/Montserrat-Regular.woff2") format("woff2"), url("/fonts/montserrat/Montserrat-Regular.ttf") format("ttf");
+  src: url("./fonts/montserrat/Montserrat-Regular.woff2") format("woff2"), url("./fonts/montserrat/Montserrat-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "montserrat__k";
-  src: url("/fonts/montserrat/Montserrat-Medium.woff2") format("woff2"), url("/fonts/montserrat/Montserrat-Medium.ttf") format("ttf");
+  src: url("./fonts/montserrat/Montserrat-Medium.woff2") format("woff2"), url("./fonts/montserrat/Montserrat-Medium.ttf") format("ttf");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "montserrat__k";
-  src: url("/fonts/montserrat/Montserrat-SemiBold.woff2") format("woff2"), url("/fonts/montserrat/Montserrat-SemiBold.ttf") format("ttf");
+  src: url("./fonts/montserrat/Montserrat-SemiBold.woff2") format("woff2"), url("./fonts/montserrat/Montserrat-SemiBold.ttf") format("ttf");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "montserrat__k";
-  src: url("/fonts/montserrat/Montserrat-Bold.woff2") format("woff2"), url("/fonts/montserrat/Montserrat-Bold.ttf") format("ttf");
+  src: url("./fonts/montserrat/Montserrat-Bold.woff2") format("woff2"), url("./fonts/montserrat/Montserrat-Bold.ttf") format("ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "montserrat__k";
-  src: url("/fonts/montserrat/Montserrat-Black.woff2") format("woff2"), url("/fonts/montserrat/Montserrat-Black.ttf") format("ttf");
+  src: url("./fonts/montserrat/Montserrat-Black.woff2") format("woff2"), url("./fonts/montserrat/Montserrat-Black.ttf") format("ttf");
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: "oswald__k";
-  src: url("/fonts/Oswald/Oswald-Regular.woff2") format("woff2"), url("/fonts/Oswald/Oswald-Regular.ttf") format("ttf");
+  src: url("../fonts/Oswald/Oswald-Regular.woff2") format("woff2"), url("../fonts/Oswald/Oswald-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "benas_neue__k";
-  src: url("/fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2"), url("/fonts/Bebas_Neue/BebasNeue-Regular.ttf") format("ttf");
+  src: url("./fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2"), url("./fonts/Bebas_Neue/BebasNeue-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
@@ -267,7 +267,7 @@ body :focus {
 .header .label__yandex .label::before {
   content: "";
   display: block;
-  background-image: url("./image/label.png");
+  background-image: url("../image/label.png");
   width: 3.5rem;
   height: 5.4375rem;
   position: absolute;
@@ -281,7 +281,7 @@ body :focus {
 .header .label__yandex .label::after {
   content: "";
   display: block;
-  background-image: url("./image/label_yandex.png");
+  background-image: url("../image/label_yandex.png");
   width: 1.625rem;
   height: 2.25rem;
   position: absolute;

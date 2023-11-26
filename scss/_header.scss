@@ -22,7 +22,7 @@
 			&::before{
 				content: '';
 				display: block;
-				background-image: url('./image/label.png');
+				background-image: url('../image/label.png');
 				width: px-to-rem(56);
 				height: px-to-rem(87);
 				position: absolute;
@@ -34,7 +34,7 @@
 			&::after{
 				content: '';
 				display: block;
-				background-image: url('./image/label_yandex.png');
+				background-image: url('../image/label_yandex.png');
 				width: px-to-rem(26);
 				height: px-to-rem(36);
 				position: absolute;
