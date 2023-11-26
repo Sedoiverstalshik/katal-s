@@ -106,6 +106,7 @@ body {
 }
 
 .btn__accent{
+  display: inline-block;
   color: var(--light_color);
   font-family: Montserrat__k;
   font-size: px-to-rem(20);
@@ -123,14 +124,14 @@ body {
 }
 
 .btn__border{
+  display: inline-block;
+  width: 100%;
   color: var(--text_color);
   font-family: Montserrat__k;
   font-size: px-to-rem(14);
   font-weight: 700;
   line-height: 1.5;
   text-align: center;
-  display: inline-block;
-  width: 100%;
   padding: px-to-rem(8);
   border: 3px solid var(--accent_color);
   border-radius: px-to-rem(10);
@@ -152,8 +153,21 @@ body {
   text-align: center;
 }
 
+.button-prev, .button-next{
+  width: px-to-rem(30);
+  height: px-to-rem(30);
+  background-color: var(--accent_color);
+  border-radius: 50%;
+  &::after{
+    font-size: px-to-rem(16);
+    font-weight: 900;
+    color: var(--light_color);
+  }
+}
+
 @import '_header';
 @import '_hero';
 @import '_auto';
 @import '_services';
 @import '_gallery';
+@import '_work';
