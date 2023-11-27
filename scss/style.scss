@@ -32,7 +32,7 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  font-family:'montserrat__k';
+  font-family:'montserrat__k', sans-serif;
   font-weight: 700;
 
 }
@@ -51,7 +51,7 @@ img {
 }
 
 body {
-  font-family: 'montserrat__k';
+  font-family: 'montserrat__k', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -92,7 +92,7 @@ body {
 
 .title{
   color: var(--light_color);
-  font-family: montserrat__k, sans-serif;
+  font-family: 'montserrat__k', sans-serif;
   font-size: px-to-rem(40);
   font-style: normal;
   font-weight: 700;
@@ -105,7 +105,7 @@ body {
 .btn__accent{
   display: inline-block;
   color: var(--light_color);
-  font-family: montserrat__k;
+  font-family: 'montserrat__k', sans-serif;
   font-size: px-to-rem(20);
   font-style: normal;
   font-weight: 700;
@@ -124,7 +124,7 @@ body {
   display: inline-block;
   width: 100%;
   color: var(--text_color);
-  font-family: montserrat__k;
+  font-family: 'montserrat__k', sans-serif;
   font-size: px-to-rem(14);
   font-weight: 700;
   line-height: 1.5;
@@ -136,7 +136,7 @@ body {
 
 .form__input{
   color: var(--input_color);
-  font-family: montserrat__k;
+  font-family: 'montserrat__k', sans-serif;
   font-size: px-to-rem(20);
   font-style: normal;
   font-weight: 500;

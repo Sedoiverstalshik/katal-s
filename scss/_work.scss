@@ -10,7 +10,7 @@
 	}
 	&__slide-title {
 		color: var(--text_color);
-		font-family: montserrat__k;
+		font-family: 'montserrat__k', sans-serif;
 		font-size: px-to-rem(35);
 		font-weight: 700;
 		line-height: 1.5;
@@ -50,7 +50,7 @@
 			padding: px-to-rem(30);
 			p {
 				color: #EDEDEE;
-				font-family: montserrat__k;
+				font-family: 'montserrat__k', sans-serif;
 				font-size: px-to-rem(16);
 				font-weight: 700;
 				line-height: normal;
@@ -70,7 +70,7 @@
 			}
 			span {
 				color: var(--light_color);
-				font-family: montserrat__k;
+				font-family: 'montserrat__k', sans-serif;
 				font-size: px-to-rem(20);
 				font-weight: 700;
 				line-height: normal;

@@ -15,7 +15,7 @@
 	}
 	&__description{
 		color: var(--text_color);
-		font-family: montserrat__k;
+		font-family: 'montserrat__k', sans-serif;
 		font-size: px-to-rem(20);
 		font-weight: 500;
 		line-height: 1.5;
@@ -64,7 +64,7 @@
 			display: flex;
 			align-items: center;
 			color: #4D4D4D;
-			font-family: montserrat__k;
+			font-family: 'montserrat__k', sans-serif;
 			font-size: px-to-rem(14);
 			font-style: normal;
 			font-weight: 400;
