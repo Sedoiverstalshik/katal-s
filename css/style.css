@@ -140,7 +140,7 @@ body :focus {
           justify-content: space-between;
 }
 
-.flex-aifs-jcc, .form__left {
+.flex-aifs-jcc, .recommendations__list li, .form__left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -834,4 +834,52 @@ fieldset {
   display: flex;
   gap: 0.3125rem;
   color: #CBCBCB;
+}
+
+.recommendations {
+  padding: 5.625rem 0;
+}
+.recommendations__title {
+  color: var(--text_color);
+  margin-bottom: 3.75rem;
+}
+.recommendations__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.875rem 2.5rem;
+}
+.recommendations__list li {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.25rem;
+  background-color: var(--dark_color);
+  max-width: 35rem;
+  width: 100%;
+  min-height: 18.75rem;
+  height: 100%;
+  padding: 2.1875rem 2.8125rem 1.875rem;
+  border-radius: 2.5rem;
+}
+.recommendations__list h3 {
+  color: #FAFAFA;
+  font-family: "montserrat__k", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.recommendations__list h3 span {
+  color: var(--accent_color);
+}
+.recommendations__list p {
+  color: var(--light_color);
+  font-family: "montserrat__k", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.recommendations__list svg {
+  fill: var(--accent_color);
+  height: 3.125rem;
 }/*# sourceMappingURL=style.css.map */
