@@ -140,7 +140,7 @@ body :focus {
           justify-content: space-between;
 }
 
-.flex-aifs-jcc, .recommendations__list li, .form__left {
+.flex-aifs-jcc, .contacts__list, .recommendations__list li, .form__left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -882,4 +882,67 @@ fieldset {
 .recommendations__list svg {
   fill: var(--accent_color);
   height: 3.125rem;
+}
+
+.contacts {
+  background-color: #fafafa;
+  padding: 5.625rem 0;
+}
+.contacts__title {
+  color: var(--dark_color);
+  max-width: 46.25rem;
+}
+.contacts__wrap {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.25rem;
+}
+.contacts__list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5625rem;
+}
+.contacts__list li .phone__big {
+  color: var(--text_color);
+  font-family: "montserrat__k", sans-serif;
+  font-size: 2.1875rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.contacts__list li .phone__big svg {
+  width: 1.875rem;
+  height: 1.875rem;
+  fill: var(--accent_color);
+  margin-left: 1.4375rem;
+}
+.contacts__list li .phone__smoll {
+  display: block;
+}
+.contacts__list li .accent__title {
+  color: var(--accent_color);
+  font-family: "montserrat__k", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 0.625rem;
+}
+.contacts__list li p, .contacts__list li a {
+  color: var(--text_color);
+  font-family: "montserrat__k", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.contacts__map {
+  max-width: 39.375rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  justify-self: end;
 }/*# sourceMappingURL=style.css.map */
