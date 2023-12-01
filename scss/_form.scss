@@ -51,7 +51,7 @@
 		@extend .flex-aic-jcc;
 		flex-direction: column;
 		gap: px-to-rem(25);
-		legend {
+		h3 {
 			color: var(--light_color);
 			font-family: 'montserrat__k', sans-serif;
 			font-size: px-to-rem(24);
