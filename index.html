@@ -8,7 +8,7 @@
 	Для того, чтобы узнать подходит ли ваш авто под программу бесплатного удаления.">
 	<meta name="keywords" content="Бесплатное удаление катализаторов, установка пламегасителя, прошивка под ЕВРО 2, установка обманки, чип-тюнинг, качественно удалим катализатор и установим надежные пламегасители, зачем удалять катализатор?">
 	<link rel="icon" href="./image/logo.png" sizes="48x48">
-	<link rel="preload" href="./fonts/Montserrat/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+	<!-- <link rel="preload" href="./fonts/Montserrat/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin> -->
 	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./css/style.min.css">
@@ -81,7 +81,7 @@
 
 				<form class="hero__form">
 					<fieldset>
-						<input class="form__input" type="tel" name="phone" id="phone" placeholder="+7 (977) 777-77-77" required>
+						<input class="form__input" type="tel" name="phone" id="phone" placeholder="+7 (977) 777-77-77" required autocomplete="off">
 						<button class="btn__accent" type="submit">Удалить катализатор</button>
 					</fieldset>
 					<fieldset class="fieldset__privacy">
@@ -395,10 +395,10 @@
 					<form class="entry__form">
 						<h3>Записаться</h3>
 						<fieldset>
-							<input class="form__input" type="text" name="car__brand" placeholder="Марка авто">
-							<input class="form__input" type="text" name="model" placeholder="Модель">
-							<input class="form__input" type="tel" name="phone" placeholder="+7 (977) 777-77-77">
-							<input class="form__input" type="number" name="year" max="4" placeholder="Год выпуска">
+							<input class="form__input" type="text" name="car__brand" placeholder="Марка авто" autocomplete="off">
+							<input class="form__input" type="text" name="model" placeholder="Модель" autocomplete="off">
+							<input class="form__input" type="tel" name="phone" placeholder="+7 (977) 777-77-77" autocomplete="off">
+							<input class="form__input" type="number" name="year" max="4" placeholder="Год выпуска" autocomplete="off">
 						</fieldset>
 						<button class="btn__accent" type="submit">Записаться</button>
 						<fieldset class="fieldset__privacy">
