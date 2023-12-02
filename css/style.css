@@ -753,6 +753,17 @@ fieldset {
   background-repeat: no-repeat;
   background-position: center;
   padding: 6.25rem 0;
+  position: relative;
+}
+.form::before {
+  content: "";
+  background-color: var(--dark_color);
+  opacity: 0.9;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 .form__title {
   font-family: "montserrat__k", sans-serif;
@@ -770,6 +781,8 @@ fieldset {
       -ms-flex-align: center;
           align-items: center;
   gap: 2.5rem;
+  position: relative;
+  z-index: 1;
 }
 .form__left {
   -webkit-box-orient: vertical;

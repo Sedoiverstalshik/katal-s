@@ -4,6 +4,17 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	padding: px-to-rem(100) 0;
+	position: relative;
+	&::before {
+		content: '';
+		background-color: var(--dark_color);
+		opacity: .9;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
 	&__title{
 		font-family: 'montserrat__k', sans-serif;
 		font-weight: 900;
@@ -18,6 +29,8 @@
 		grid-template-columns: 1fr 1fr;
 		align-items: center;
 		gap: px-to-rem(40);
+		position: relative;
+		z-index: 1;
 	}
 	&__left {
 		@extend .flex-aifs-jcc;
