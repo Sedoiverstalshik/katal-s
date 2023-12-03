@@ -19,7 +19,7 @@
 	<header class="header">
 		<div class="container">
 			<ul class="header__wrap">
-				<li class="header__logo">
+				<li class="header__logo" title="Логотип компании">
 					<a href="#">
 						<img src="./image/logo.png" alt="Логотип компании">
 					</a>
@@ -31,9 +31,11 @@
 				</li>
 				<li class="header__location" title="Ссылка на карту.">
 					<a class="location" href="#contacts">
-						<svg>
-							<use xlink:href="./sprite.svg#location" role="img" aria-label="Иконка геолокации"></use>
-						</svg>
+						<div class="rect">
+							<svg>
+								<use xlink:href="./sprite.svg#location" role="img" aria-label="Иконка геолокации"></use>
+							</svg>
+						</div>
 						<div>
 							Удобное местоположение
 							<span>Смотреть на карте</span>
@@ -46,9 +48,11 @@
 							Задайте нам вопрос:
 							<span>WhatsApp</span>
 						</div>
-						<svg>
-							<use xlink:href="./sprite.svg#whatsapp" role="img" aria-label="Иконка whatsapp"></use>
-						</svg>
+						<div class="rect">
+							<svg>
+								<use xlink:href="./sprite.svg#whatsapp" role="img" aria-label="Иконка whatsapp"></use>
+							</svg>
+						</div>
 					</a>
 				</li>
 				<li class="header__phone" title="Позвонить нам">
@@ -73,7 +77,7 @@
 		<!-- /.container -->
 	</header>
 
-	<section class="hero" style="background-image: url('./image/main_bg.jpg');">
+	<section class="hero" style="background-image: url('./image/main_bg.webp');">
 		<div class="container">
 			<div class="hero__content">
 				<h1 class="hero__title title"><span>Бесплатное</span> удаление катализаторов в Москве Проверенный сервис!</h1>
@@ -86,7 +90,7 @@
 					</fieldset>
 					<fieldset class="fieldset__privacy">
 						<input class="input__checkbox" type="checkbox" name="checkbox" value="yes">
-						<a class="privacy__policy" href="#">Политика конфиденциальности</a>
+						<a class="privacy__policy" href="#" title="Ссылка на политику конфиденциальности.">Политика конфиденциальности</a>
 					</fieldset>
 				</form>
 			</div>
@@ -198,14 +202,36 @@
 			<h2 class="gallery__title title">Галерея <span>наших работ</span></h2>
 
 			<div class="gallery__wrap">
-				<div class="gallery__left">
-					<img class="a" src="./image/gallery/gallery1.jpg" alt="Фото 1">
-					<img class="b" src="./image/gallery/gallery2.jpg" alt="Фото 2">
-					<img class="c" src="./image/gallery/gallery3.jpg" alt="Фото 3">
-					<img class="d" src="./image/gallery/gallery4.jpg" alt="Фото 4">
-					<img class="e" src="./image/gallery/gallery5.jpg" alt="Фото 5">
-					<img class="f" src="./image/gallery/gallery6.jpg" alt="Фото 6">
-					<img class="g" src="./image/gallery/gallery7.jpg" alt="Фото 7">
+				<div class="gallery__left" title="Галлерея работ">
+					<picture class="a">
+						<source srcset="./image/gallery/gallery1.webp" type="image/webp" />								
+						<img src="./image/gallery/gallery1.jpg" alt="Фото 1">
+					</picture>
+					<picture class="b">
+						<source srcset="./image/gallery/gallery2.webp" type="image/webp" />								
+						<img src="./image/gallery/gallery2.jpg" alt="Фото 2">
+					</picture>
+					<picture class="c">
+						<source srcset="./image/gallery/gallery3.webp" type="image/webp" />								
+						<img src="./image/gallery/gallery3.jpg" alt="Фото 3">
+					</picture>
+					<picture class="d">
+						<source srcset="./image/gallery/gallery4.webp" type="image/webp" />								
+						<img src="./image/gallery/gallery4.jpg" alt="Фото 4">
+					</picture>
+					<picture class="e">
+						<source srcset="./image/gallery/gallery5.webp" type="image/webp" />								
+						<img src="./image/gallery/gallery5.jpg" alt="Фото 5">
+					</picture>
+					<picture class="f">
+						<source srcset="./image/gallery/gallery6.webp" type="image/webp" />								
+						<img src="./image/gallery/gallery6.jpg" alt="Фото 6">
+					</picture>
+					<picture class="g">
+						<source srcset="./image/gallery/gallery7.webp" type="image/webp" />								
+						<img src="./image/gallery/gallery7.jpg" alt="Фото 7">
+					</picture>
+
 				</div>
 				<!-- /.gallery__left -->
 
@@ -257,7 +283,10 @@
 
 					<div class="work__swiper-slide swiper-slide">
 						<div class="work__slide-img">
-							<img src="./image/work1.jpg" alt="Фото автомобиля bmw.">
+							<picture>
+								<source srcset="./image/work1.webp" type="image/webp" />								
+								<img src="./image/work1.jpg" alt="Фото автомобиля bmw.">
+							</picture>
 						</div>
 						<div class="work__slide-content">
 							<h3 class="work__slide-title">BMW series 3 (2016)</h3>
@@ -312,7 +341,10 @@
 					</div>
 					<div class="work__swiper-slide swiper-slide">
 						<div class="work__slide-img">
-							<img src="./image/work1.jpg" alt="Фото автомобиля bmw.">
+							<picture>
+								<source srcset="./image/work1.webp" type="image/webp" />								
+								<img src="./image/work1.jpg" alt="Фото автомобиля bmw.">
+							</picture>
 						</div>
 						<div class="work__slide-content">
 							<h3 class="work__slide-title">BMW series 3 (2016)</h3>
@@ -392,7 +424,7 @@
 					</p>
 				</div>
 				<div class="form__right">
-					<form class="entry__form">
+					<form class="entry__form" title="Форма записи на удаление катализатора.">
 						<h3>Записаться</h3>
 						<fieldset>
 							<input class="form__input" type="text" name="car__brand" placeholder="Марка авто" autocomplete="off">
@@ -458,7 +490,7 @@
 			<h2 class="contacts__title title"><span>Приезжайте</span> и оцените качество нашей работы</h2>
 			<div class="contacts__wrap">
 				<ul class="contacts__list">
-					<li>
+					<li title="Телефоны для связи.">
 						<a class="phone__big" href="tel:+79060591098">+7 906 059-10-98
 							<svg role="img" aria-label="Иконка whatsapp">
 								<use xlink:href="./sprite.svg#whatsapp_smoll"></use>
@@ -466,22 +498,22 @@
 						</a>
 						<a class="phone__smoll" href="tel:+74957489528">+7 495 748-95-28</a>
 					</li>
-					<li>
+					<li title="Наш адрес">
 						<p class="accent__title">Адрес сервиса:</p>
 						<p>м. Южная, ул. Днепропетровский проезд, дом 5, строение 1</p>
 					</li>
-					<li>
+					<li title="Время работы">
 						<p class="accent__title">Время работы:</p>
 						<p>ежедневно с 9:00 до 21:00</p>
 					</li>
-					<li>
+					<li title="Написать нам">
 						<p class="accent__title">Эл. почта:</p>
 						<a href="mailto:mail@mail.ru">mail@mail.ru</a>
 					</li>
 				</ul>
 				<!-- /.contacts__info -->
-				<div class="contacts__map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2252.944640117898!2d37.62053207640435!3d55.62037897303547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0LwuINCu0LbQvdCw0Y8sINGD0LsuINCU0L3QtdC_0YDQvtC_0LXRgtGA0L7QstGB0LrQuNC5INC_0YDQvtC10LfQtCwg0LTQvtC8IDUsINGB0YLRgNC-0LXQvdC40LUgMQ!5e0!3m2!1sru!2sru!4v1701449990441!5m2!1sru!2sru" width="630" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<div class="contacts__map" title="Интерактивная карта">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2252.944640117898!2d37.62053207640435!3d55.62037897303547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0LwuINCu0LbQvdCw0Y8sINGD0LsuINCU0L3QtdC_0YDQvtC_0LXRgtGA0L7QstGB0LrQuNC5INC_0YDQvtC10LfQtCwg0LTQvtC8IDUsINGB0YLRgNC-0LXQvdC40LUgMQ!5e0!3m2!1sru!2sru!4v1701449990441!5m2!1sru!2sru" width="630" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Интерактивная карта"></iframe>
 				</div>
 				<!-- /.contacts__map -->
 			</div>
@@ -504,7 +536,7 @@
 						<p>ИНН: 112345235 / ОГРН: 1234456</p>
 					</li>
 				</ul>
-				<a href="#">Политика конфиденциальности</a>
+				<a href="#" title="Ссылка на политику конфиденциальности.">Политика конфиденциальности</a>
 			</div>
 			<!-- /.footer__card -->
 			<div class="footer__content">
@@ -516,7 +548,7 @@
 						<li><a href="#info">Зачем удалять катализатор?</a></li>
 					</ul>
 				</nav>
-				<div class="phone__box">
+				<div class="phone__box" title="Телефоны для связи с нами.">
 					<a class="phone__big" href="tel:+79060591098">+7 906 059-10-98</a>
 					<a class="phone__smoll" href="tel:+74957489528">+7 495 748-95-28</a>
 				</div>

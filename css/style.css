@@ -112,7 +112,7 @@ body :focus {
   outline: 1px solid var(--accent_color);
 }
 
-.flex-aic-jcfe, .header .social {
+.flex-aic-jcfe, .header__social .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,7 +160,7 @@ body :focus {
           justify-content: center;
 }
 
-.flex-aic-jcc, .form .entry__form, .services__list .img__wrap, .services__list li::after, .auto__swiper-slide, .header .location {
+.flex-aic-jcc, .form .entry__form, .services__list .img__wrap, .services__list li::after, .auto__swiper-slide, .header__location .location {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -305,7 +305,7 @@ fieldset {
 }
 .header__wrap {
   display: grid;
-  grid-template-columns: 12.5rem 9.375rem 1fr 1fr 1fr;
+  grid-template-columns: 10rem 8.125rem 1fr 1fr 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -363,10 +363,19 @@ fieldset {
   font-weight: 500;
   line-height: 1.5;
 }
-.header .location {
+.header__location .location {
   gap: 0.9375rem;
 }
-.header .location svg {
+.header__location .location .rect {
+  max-width: 3.125rem;
+  width: 100%;
+  height: 3.125rem;
+  border-radius: 50%;
+  background-color: #FFEEDF;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+.header__location .location .rect svg {
   -ms-flex-item-align: center;
       align-self: center;
   justify-self: center;
@@ -374,34 +383,56 @@ fieldset {
   width: 100%;
   height: 3.125rem;
   fill: var(--accent_color);
+  -webkit-transition: fill 0.5s ease-in-out;
+  transition: fill 0.5s ease-in-out;
 }
-.header .location span {
+.header__location .location span {
   font-size: 1rem;
   color: var(--accent_color);
   border-bottom: 1px dashed var(--accent_color);
 }
-.header .social {
+.header__location .location:hover .rect, .header__location .location:hover svg {
+  fill: #FFEEDF;
+  background-color: var(--accent_color);
+  border-radius: 50%;
+}
+.header__social .social {
   gap: 0.9375rem;
 }
-.header .social svg {
+.header__social .social svg {
   -ms-flex-item-align: center;
       align-self: center;
   justify-self: center;
   width: 3.125rem;
   height: 3.125rem;
   fill: var(--light_color);
+  -webkit-transition: fill 0.5s ease-in-out;
+  transition: fill 0.5s ease-in-out;
 }
-.header .social div {
+.header__social .social .rect {
+  width: 3.125rem;
+  height: 3.125rem;
+  background-color: #00BB25;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+.header__social .social div {
   -ms-flex-item-align: center;
       align-self: center;
   justify-self: flex-end;
 }
-.header .social span {
+.header__social .social span {
   display: block;
   text-align: end;
   font-size: 1rem;
   font-weight: 700;
   color: var(--text_color);
+}
+.header__social:hover .rect, .header__social:hover svg {
+  fill: var(--accent_color);
+  background-color: #FFEEDF;
+  border-radius: 50%;
 }
 .header__phone a {
   display: -webkit-box;
@@ -413,10 +444,15 @@ fieldset {
           flex-direction: column;
   text-align: end;
 }
+.header__phone a:hover span {
+  color: var(--accent_color);
+}
 .header__phone a span {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--text_color);
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 .header__menu-list {
   position: relative;
@@ -433,6 +469,11 @@ fieldset {
   font-weight: 600;
   line-height: 1.5;
   color: var(--second_color);
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.header__menu-list a:hover {
+  color: var(--accent_color);
 }
 
 .hero {
@@ -755,7 +796,7 @@ fieldset {
 }
 
 .form {
-  background: var(--dark_color) url("../image/form_bg.jpg");
+  background: var(--dark_color) url("../image/form_bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
