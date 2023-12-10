@@ -118,6 +118,10 @@ body {
   border-radius: px-to-rem(10);
   cursor: pointer;
   text-align: center;
+  transition: background-color .3s ease-in-out;
+  &:hover {
+    background-color: lighten(#fd7900, 10);
+  }
 }
 
 .btn__border{
@@ -219,3 +223,7 @@ fieldset{
 @import '_recommendations';
 @import '_contacts';
 @import '_footer';
+
+.none {
+  display: none;
+}

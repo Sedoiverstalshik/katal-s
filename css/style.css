@@ -1,52 +1,52 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "montserrat__k";
-  src: url("../fonts/montserrat/Montserrat-Regular.woff2") format("woff2"), url("../fonts/montserrat/Montserrat-Regular.ttf") format("ttf");
-  font-weight: 400;
-  font-style: normal;
   font-display: swap;
+  font-family: "montserrat__k";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat/montserrat-v26-cyrillic_latin-regular.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v26-cyrillic_latin-regular.ttf") format("truetype");
 }
 @font-face {
+  font-display: swap;
   font-family: "montserrat__k";
-  src: url("../fonts/Montserrat/Montserrat-Medium.woff2") format("woff2"), url("../fonts/montserrat/Montserrat-Medium.ttf") format("ttf");
+  font-style: normal;
   font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+  src: url("../fonts/montserrat/montserrat-v26-cyrillic_latin-500.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v26-cyrillic_latin-500.ttf") format("truetype");
 }
 @font-face {
+  font-display: swap;
   font-family: "montserrat__k";
-  src: url("../fonts/montserrat/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/montserrat/Montserrat-SemiBold.ttf") format("ttf");
+  font-style: normal;
   font-weight: 600;
-  font-style: normal;
-  font-display: swap;
+  src: url("../fonts/montserrat/montserrat-v26-cyrillic_latin-600.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v26-cyrillic_latin-600.ttf") format("truetype");
 }
 @font-face {
+  font-display: swap;
   font-family: "montserrat__k";
-  src: url("../fonts/montserrat/Montserrat-Bold.woff2") format("woff2"), url("../fonts/montserrat/Montserrat-Bold.ttf") format("ttf");
+  font-style: normal;
   font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+  src: url("../fonts/montserrat/montserrat-v26-cyrillic_latin-700.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v26-cyrillic_latin-700.ttf") format("truetype");
 }
 @font-face {
+  font-display: swap;
   font-family: "montserrat__k";
-  src: url("../fonts/montserrat/Montserrat-Black.woff2") format("woff2"), url("../fonts/montserrat/Montserrat-Black.ttf") format("ttf");
+  font-style: normal;
   font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+  src: url("../fonts/montserrat/montserrat-v26-cyrillic_latin-900.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v26-cyrillic_latin-900.ttf") format("truetype");
 }
 @font-face {
+  font-display: swap;
   font-family: "oswald__k";
-  src: url("./fonts/Oswald/Oswald-Regular.woff2") format("woff2"), url("./fonts/Oswald/Oswald-Regular.ttf") format("ttf");
-  font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-weight: 400;
+  src: url("../fonts/oswald/oswald-v53-cyrillic_latin-regular.woff2") format("woff2"), url("../fonts/oswald/oswald-v53-cyrillic_latin-regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "benas_neue__k";
-  src: url("./fonts/Bebas_Neue/BebasNeue-Regular.woff2") format("woff2"), url("./fonts/Bebas_Neue/BebasNeue-Regular.ttf") format("ttf");
-  font-weight: 400;
-  font-style: normal;
   font-display: swap;
+  font-family: "benas_neue__k";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/bebas-neue/bebas-neue-v14-latin-regular.woff2") format("woff2"), url("../fonts/bebas-neue/bebas-neue-v14-latin-regular.ttf") format("truetype");
 }
 :root {
   --light_color: #fff;
@@ -200,6 +200,11 @@ body :focus {
   border-radius: 0.625rem;
   cursor: pointer;
   text-align: center;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+.btn__accent:hover {
+  background-color: #ff9431;
 }
 
 .btn__border {
@@ -315,10 +320,17 @@ fieldset {
 }
 .header__logo {
   margin-left: -1.25rem;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+.header__logo:hover {
+  opacity: 0.5;
 }
 .header .label__yandex {
   position: relative;
   top: -0.625rem;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 .header .label__yandex .label {
   position: absolute;
@@ -355,6 +367,9 @@ fieldset {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+.header .label__yandex:hover {
+  opacity: 0.5;
+}
 .header .location, .header__social, .header__phone {
   color: #4D4D4D;
   font-family: "montserrat__k", sans-serif;
@@ -372,8 +387,6 @@ fieldset {
   height: 3.125rem;
   border-radius: 50%;
   background-color: #FFEEDF;
-  -webkit-transition: background-color 0.5s ease-in-out;
-  transition: background-color 0.5s ease-in-out;
 }
 .header__location .location .rect svg {
   -ms-flex-item-align: center;
@@ -383,21 +396,20 @@ fieldset {
   width: 100%;
   height: 3.125rem;
   fill: var(--accent_color);
-  -webkit-transition: fill 0.5s ease-in-out;
-  transition: fill 0.5s ease-in-out;
 }
 .header__location .location span {
   font-size: 1rem;
   color: var(--accent_color);
-  border-bottom: 1px dashed var(--accent_color);
+  -webkit-transition: border 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out;
+  border-bottom: 1px dashed transparent;
 }
-.header__location .location:hover .rect, .header__location .location:hover svg {
-  fill: #FFEEDF;
-  background-color: var(--accent_color);
-  border-radius: 50%;
+.header__location:hover span {
+  border-bottom: 1px dashed var(--accent_color);
 }
 .header__social .social {
   gap: 0.9375rem;
+  text-align: end;
 }
 .header__social .social svg {
   -ms-flex-item-align: center;
@@ -417,22 +429,18 @@ fieldset {
   -webkit-transition: background-color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
 }
-.header__social .social div {
-  -ms-flex-item-align: center;
-      align-self: center;
-  justify-self: flex-end;
-}
 .header__social .social span {
-  display: block;
+  display: inline-block;
   text-align: end;
   font-size: 1rem;
   font-weight: 700;
   color: var(--text_color);
+  -webkit-transition: border 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out;
+  border-bottom: 1px dashed transparent;
 }
-.header__social:hover .rect, .header__social:hover svg {
-  fill: var(--accent_color);
-  background-color: #FFEEDF;
-  border-radius: 50%;
+.header__social:hover span {
+  border-bottom: 1px dashed var(--text_color);
 }
 .header__phone a {
   display: -webkit-box;
@@ -1113,4 +1121,8 @@ fieldset {
   display: block;
   color: inherit;
   text-decoration: none;
+}
+
+.none {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
