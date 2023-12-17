@@ -227,3 +227,12 @@ fieldset{
 .none {
   display: none;
 }
+
+@media (max-width: 900px) {
+  .form__input,
+  .btn__accent {
+    font-size: px-to-rem(16);
+    max-width: px-to-rem(250);
+    padding: px-to-rem(10);
+  }
+}
