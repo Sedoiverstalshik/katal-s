@@ -228,11 +228,34 @@ fieldset{
   display: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
+  .btn__border{
+    font-size: px-to-rem(14);
+    padding: px-to-rem(6);
+  }
+}
+@media (max-width: 910px) {
+  .title{
+    font-size: px-to-rem(36);
+  }
   .form__input,
   .btn__accent {
     font-size: px-to-rem(16);
     max-width: px-to-rem(250);
     padding: px-to-rem(10);
+  }
+}
+@media (max-width: 800px) {
+  .title{
+    font-size: px-to-rem(32);
+  }
+}
+@media (max-width: 450px) {
+  .title{
+    font-size: px-to-rem(26);
+  }
+  .form__input,
+  .btn__accent {
+    font-size: px-to-rem(12);
   }
 }
