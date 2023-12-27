@@ -253,6 +253,7 @@ fieldset{
 @media (max-width: 450px) {
   .title{
     font-size: px-to-rem(26);
+    line-height: 1.2;
   }
   .form__input,
   .btn__accent {
