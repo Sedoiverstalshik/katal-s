@@ -1,5 +1,6 @@
 const autoSwiper = new Swiper('.auto__swiper', {
   loop: true,
+  slidesPerGroup: 1,
 	slidesPerView: 6,
 	spaceBetween: 40,
 
@@ -12,6 +13,7 @@ const autoSwiper = new Swiper('.auto__swiper', {
 
 const workSwiper = new Swiper('.work__swiper', {
   loop: true,
+  slidesPerGroup: 1,
 	slidesPerView: 1,
   effect: 'fade',
 
